@@ -117,7 +117,7 @@ export async function onRequest(context) {
             })
         }
 
-        if(clientIP !== '120.77.32.171' || clientIP !== '47.106.241.49' || clientIP !== '47.106.212.46' || clientIP !== '39.108.134.118'){
+        if(clientIP !== '120.77.32.171' && clientIP !== '47.106.241.49' && clientIP !== '47.106.212.46' && clientIP !== '39.108.134.118'){
             return Response.json({ message: 'client error!' }, {
                 headers: corsHeaders,
                 status: 400
